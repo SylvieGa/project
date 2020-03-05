@@ -44,8 +44,7 @@ def index():
     curs.execute("INSERT INTO products_in_shop(prodductId, productname, in_stock, price) VALUES ('1', 'Notizbuch', '4', '12');")
     conn.commit()
 
-    curs.execute("CREATE TABLE IF NOT EXISTS newsletter(lastname, firstname, email, city);")
-    curs.execute("INSERT INTO newsletter(lastname, firstname, email, city) VALUES ('Ganter', 'Sylvie', 'sylvia@gmail.com', 'Cologne');")
+    curs.execute("CREATE TABLE IF NOT EXISTS login(email, password);")
     conn.commit()
 
  #SQLite3 DB-Cursor schließen
